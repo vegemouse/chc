@@ -1,3 +1,11 @@
 .container {
+  @include container-padding;
   display: flex;
+  justify-content: space-between;
+  @media #{$medium-break} {
+    padding: 0 20px;
+  }
+  @media #{$small-break} {
+    flex-wrap: wrap;
+  }
 }

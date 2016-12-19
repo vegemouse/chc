@@ -1,5 +1,24 @@
 .sidebar {
-  border-right: 2px solid $grey;
-  height: 500px;
-  flex: 1;
+  flex: 1 30%;
+  padding: 30px 20px;
+  h5 {
+    color: $teal;
+  }
+  h6 {
+    color: $pink;
+  }
+  p {
+    margin: 20px 0;
+    padding: 5px;
+    text-align: center;
+  }
+  iframe {
+    margin-top: 20px;
+    height: 200px;
+    width: 100%;
+    border: 0;
+  }
+  @media #{$small-break} {
+    flex: 1 100%;
+  }
 }
