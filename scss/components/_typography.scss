@@ -1,0 +1,28 @@
+ul, li, div, p, span, section {
+  font-family: $normal-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.7em;
+  @media #{$medium-break} {
+    font-size: 1.5em;
+  }
+}
+
+h4 {
+  font-size: 1.6em;
+  @media #{$medium-break} {
+    font-size: 1.4em;
+  }
+}
+
+a {
+  color: $grey;
+  text-decoration: none;
+}
