@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 2px solid $light-grey;
+  padding: 20px;
+  img {
+    width: 100px;
+  }
+  p {
+    opacity: 0.9;
+    padding: 20px 30px;
+    text-align: center;
+  }
+}

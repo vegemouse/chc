@@ -1,5 +1,4 @@
 .container {
-  @include container-padding;
   display: flex;
   justify-content: space-between;
   @media #{$medium-break} {
