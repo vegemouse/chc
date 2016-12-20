@@ -433,7 +433,7 @@ h6 {
   font-size: 1.2em; }
 
 a {
-  color: #999;
+  color: #666;
   text-decoration: none; }
 
 .highlight {
@@ -446,23 +446,23 @@ a {
   margin-right: auto; }
   @media screen and (max-width: 950px) {
     .wrapper {
-      padding: 20px 0; } }
+      padding: 0; } }
 
 .header {
+  padding-right: 35px;
+  margin-bottom: 10px;
   display: flex;
   margin-right: auto;
   margin-left: auto;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #eee; }
+  align-items: center; }
   @media screen and (max-width: 950px) {
     .header {
-      padding: 0 20px;
-      border-bottom: none; } }
+      padding: 20px 20px; } }
 
 .logo {
-  flex: 1 45%;
+  flex: 1 35%;
   display: flex;
   align-items: center; }
   .logo img {
@@ -473,31 +473,37 @@ a {
     .logo h3 a {
       color: #009F9A; }
   .logo h4 {
-    font-family: "Alex Brush", serif; }
+    font-family: "Alex Brush", serif;
+    text-align: center; }
     .logo h4 a {
       color: #D17F84; }
-  @media screen and (max-width: 620px) {
+  @media screen and (max-width: 950px) {
+    .logo {
+      flex: 1 40%; } }
+  @media screen and (max-width: 700px) {
     .logo {
       flex: 1 100%;
-      justify-content: center; }
-      .logo h4 {
-        text-align: center; } }
+      justify-content: center; } }
 
 .navigation {
-  flex: 1 55%;
+  flex: 1 65%;
   text-align: center;
   display: flex;
   justify-content: space-between;
   padding: 0; }
   .navigation li {
-    border-radius: 7px;
-    padding: 15px;
+    border-radius: 3px;
+    padding: 10px 5px;
     font-size: 1.1em;
+    letter-spacing: 1px;
     display: inline;
     transition: background-color 100ms ease-out; }
     .navigation li:hover {
       background-color: #eee; }
-  @media screen and (max-width: 620px) {
+  @media screen and (max-width: 950px) {
+    .navigation {
+      flex: 1 60%; } }
+  @media screen and (max-width: 700px) {
     .navigation {
       flex: 1 100%; } }
 
@@ -513,7 +519,7 @@ a {
   overflow: hidden;
   position: absolute;
   border-radius: 0 5px 5px 5px;
-  top: 45px;
+  top: 36px;
   left: 0;
   padding: 0;
   width: 260px;
@@ -521,34 +527,35 @@ a {
   .services-menu li {
     border-radius: 0;
     padding: 13px 10px;
-    font-size: 1em;
+    font-size: 0.85em;
     margin-left: 0;
     display: block;
     text-align: left;
     width: auto;
-    color: #999; }
+    color: #666; }
     .services-menu li:hover {
       cursor: pointer;
       background-color: #009F9A;
       color: white; }
 
 .container {
-  padding: 25px 0;
+  padding-top: 10px;
   display: flex;
   justify-content: space-between; }
   @media screen and (max-width: 950px) {
     .container {
       padding: 0 20px; } }
-  @media screen and (max-width: 620px) {
+  @media screen and (max-width: 700px) {
     .container {
       flex-wrap: wrap; } }
 
 .sidebar {
   text-align: center;
-  padding: 0 20px;
-  flex: 1 30%; }
+  padding: 5px 25px;
+  flex: 1 25%; }
   .sidebar h5 {
-    color: #009F9A; }
+    color: #009F9A;
+    margin-bottom: 20px; }
   .sidebar h6 {
     color: #D17F84; }
   .sidebar p {
@@ -560,21 +567,19 @@ a {
     max-height: 300px;
     width: 100%;
     border: 0; }
-  @media screen and (max-width: 620px) {
+  @media screen and (max-width: 700px) {
     .sidebar {
       flex: 1 100%; } }
   .sidebar img {
     width: 130px; }
-    .sidebar img:first-of-type {
-      margin-bottom: 20px; }
 
 .main {
   display: flex;
+  padding-bottom: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 20px;
-  flex: 1 70%; }
-  @media screen and (max-width: 620px) {
+  flex: 1 75%; }
+  @media screen and (max-width: 700px) {
     .main {
       flex: 1 100%; } }
   .main h2 {
@@ -583,7 +588,7 @@ a {
     width: 100%;
     text-align: center;
     color: #D17F84;
-    max-width: 650px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto; }
   .main h4 {
@@ -592,13 +597,13 @@ a {
     width: 100%;
     text-align: center;
     font-size: 1.1em;
-    max-width: 650px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto; }
   .main p {
     line-height: 1.2em;
     font-size: 1.1em;
-    max-width: 650px;
+    max-width: 750px;
     margin-right: auto;
     margin-left: auto; }
 
@@ -720,12 +725,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 50px;
   border-top: 2px solid #eee; }
   .footer p {
     text-align: center;
-    font-size: 0.9em;
-    line-height: 20px;
+    font-size: 0.85em;
+    line-height: 17px;
     opacity: 0.9; }
 
 /*# sourceMappingURL=application.css.map */

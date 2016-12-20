@@ -1,9 +1,9 @@
 .main {
   display: flex;
+  padding-bottom: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 20px;
-  flex: 1 70%;
+  flex: 1 75%;
   @media #{$small-break} {
     flex: 1 100%;
   }
@@ -13,7 +13,7 @@
     width: 100%;
     text-align: center;
     color: $pink;
-    max-width: 650px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -23,14 +23,14 @@
     width: 100%;
     text-align: center;
     font-size: 1.1em;
-    max-width: 650px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
   }
   p {
     line-height: 1.2em;
     font-size: 1.1em;
-    max-width: 650px;
+    max-width: 750px;
     margin-right: auto;
     margin-left: auto;
   }
