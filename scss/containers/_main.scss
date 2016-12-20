@@ -1,37 +1,11 @@
 .main {
-  display: flex;
-  padding-bottom: 20px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex: 1 75%;
-  @media #{$small-break} {
-    flex: 1 100%;
-  }
-  h2 {
-    font-size: 1.6em;
-    margin: 10px;
-    width: 100%;
-    text-align: center;
-    color: $pink;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  h4 {
-    margin: 7px;
-    color: $teal;
-    width: 100%;
-    text-align: center;
-    font-size: 1.1em;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  @include page-content;
   p {
-    line-height: 1.2em;
-    font-size: 1.1em;
-    max-width: 750px;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.15em;
     margin-right: auto;
     margin-left: auto;
   }
+
 }

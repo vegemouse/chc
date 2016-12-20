@@ -1,0 +1,17 @@
+@mixin page-content {
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 20px 20px 20px;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1 75%;
+  p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    max-width: 800px;
+  }
+  @media #{$small-break} {
+    flex: 1 100%;
+  }
+}

@@ -1,7 +1,7 @@
 .sidebar {
   box-sizing: border-box;
   text-align: center;
-  padding: 5px 25px;
+  padding-left: 25px;
   flex: 1 25%;
   h5 {
     color: $teal;
@@ -9,9 +9,6 @@
   }
   h6 {
     color: $pink;
-  }
-  p {
-    padding: 10px;
   }
   iframe {
     margin: 20px 0;
@@ -26,5 +23,9 @@
   img {
     width: 130px;
   }
+}
 
+.well {
+  background-color: $light-grey;
+  padding: 13px;
 }

@@ -1,7 +1,10 @@
 .footer {
+  box-sizing: border-box;
   width: 100%;
+  padding: 0 40px;
+  background-color: $light-grey;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: 50px;
   border-top: 2px solid $light-grey;

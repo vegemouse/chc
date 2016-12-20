@@ -1,0 +1,27 @@
+.about-page {
+  @include page-content;
+  h2 {
+    margin-bottom: 20px;
+  }
+  .lead-in {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 80%;
+    @media #{$small-break} {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+.about-photo {
+  margin-top: 20px;
+  width: 20%;
+  overflow: hidden;
+  @media #{$small-break} {
+    width: 100%;
+  }
+  img {
+    max-width: 100%;
+  }
+}

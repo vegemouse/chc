@@ -41,3 +41,26 @@ a {
 .highlight {
   letter-spacing: 1px;
 }
+.main, .about-page, .individual-therapy-page, .couples-therapy-page, .adoption-therapy-page {
+  h2 {
+    font-size: 1.6em;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    color: $pink;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h4 {
+    margin: 7px;
+    color: $teal;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

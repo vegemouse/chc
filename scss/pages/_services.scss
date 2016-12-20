@@ -1,0 +1,62 @@
+@mixin services-header($image, $position) {
+  .header {
+    height: 240px;
+    flex: 1 100%;
+    background: url('../img/slide_#{$image}.jpg');
+    background-size: cover;
+    background-position: $position;
+    position: relative;
+    h1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 3px 3px 3px black;
+      text-align: center;
+    }
+  }
+}
+
+.individual-therapy-page {
+  @include page-content;
+  @include services-header(1, center);
+  li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+}
+
+.couples-therapy-page {
+  @include page-content;
+  @include services-header(2, center);
+  h4 {
+    text-align: left;
+  }
+  li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  .special {
+    color: $teal;
+    font-size: 1.1em;
+  }
+  .special-list {
+    list-style-type: none;
+    li:first-letter {
+      color: $teal;
+      font-size: 1.3em;
+      padding-right: 2px;
+    }
+  }
+}
+
+.family-therapy-page {
+  @include page-content;
+  @include services-header(3, center);
+}
+
+.adoption-therapy-page {
+  @include page-content;
+  @include services-header(4, 50% 25%);
+}

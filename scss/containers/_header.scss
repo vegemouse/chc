@@ -56,6 +56,7 @@
     display: inline;
     transition: background-color 100ms ease-out;
     &:hover {
+      cursor: pointer;
       background-color: $light-grey;
     }
   }
