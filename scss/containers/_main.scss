@@ -8,13 +8,14 @@
     flex: 1 100%;
   }
   h2 {
-    font-size: 1.8em;
-    margin-top: 10px;
+    font-size: 1.7em;
+    margin: 10px;
     width: 100%;
     text-align: center;
     color: $pink;
   }
   h4 {
+    margin: 7px;
     color: $teal;
     text-align: center;
     width: 100%;
@@ -37,7 +38,6 @@
   height: 40vh;
   max-height: 350px;
   margin-bottom: 20px;
-  border-radius: 20px;
   position: relative;
   background-color: rgba(255,255,255, 0.15);
   position: relative;
@@ -48,10 +48,10 @@
     background: url("../img/slide_#{$i}.jpg");
     background-size: cover;
     background-position: center;
-    border-radius: 20px;
     width: 100%;
     height: 100%;
     position: absolute;
+    border-radius: 10px;
     top: 0;
     left: 0;
     h3 {
