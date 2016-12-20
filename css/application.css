@@ -403,7 +403,7 @@ template {
 [hidden] {
   display: none; }
 
-ul, li, div, p, span, section {
+ul, li, div, p, span, section, button, td, th {
   font-family: "Cabin Condensed", "Helvetica Neue", Helvetica, sans-serif;
   color: #666; }
 
@@ -439,7 +439,7 @@ a {
 .highlight {
   letter-spacing: 1px; }
 
-.main h2, .about-page h2, .individual-therapy-page h2, .couples-therapy-page h2, .adoption-therapy-page h2, .parent-coaching-page h2, .training-page h2, .hours-and-fees-page h2 {
+.main h2, .about-page h2, .individual-therapy-page h2, .couples-therapy-page h2, .adoption-therapy-page h2, .parent-coaching-page h2, .training-page h2, .hours-and-fees-page h2, .contact-page h2 {
   font-size: 1.6em;
   margin: 10px;
   width: 100%;
@@ -448,7 +448,7 @@ a {
   max-width: 750px;
   margin-left: auto;
   margin-right: auto; }
-.main h4, .about-page h4, .individual-therapy-page h4, .couples-therapy-page h4, .adoption-therapy-page h4, .parent-coaching-page h4, .training-page h4, .hours-and-fees-page h4 {
+.main h4, .about-page h4, .individual-therapy-page h4, .couples-therapy-page h4, .adoption-therapy-page h4, .parent-coaching-page h4, .training-page h4, .hours-and-fees-page h4, .contact-page h4 {
   margin: 7px;
   color: #009F9A;
   width: 100%;
@@ -624,11 +624,11 @@ a {
   padding: 0; }
   .navigation li {
     border-radius: 3px;
-    padding: 10px 5px;
+    padding: 12px 6px;
     font-size: 1.1em;
     letter-spacing: 1px;
     display: inline;
-    transition: background-color 100ms ease-out; }
+    transition: background-color 200ms ease-out; }
     .navigation li a {
       color: #666; }
     .navigation li:hover {
@@ -657,7 +657,7 @@ a {
   left: 0;
   padding: 0;
   width: 260px;
-  transition: all 150ms ease-out; }
+  transition: all 200ms ease-in-out; }
   .services-menu li {
     border-radius: 0;
     padding: 13px 10px;
@@ -798,14 +798,14 @@ a {
   @media screen and (max-width: 700px) {
     .individual-therapy-page {
       flex: 1 100%; } }
-  .individual-therapy-page .header {
+  .individual-therapy-page .jumbo {
     height: 240px;
     flex: 1 100%;
     background: url("../img/slide_1.jpg");
     background-size: cover;
     background-position: center;
     position: relative; }
-    .individual-therapy-page .header h1 {
+    .individual-therapy-page .jumbo h1 {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -832,14 +832,14 @@ a {
   @media screen and (max-width: 700px) {
     .couples-therapy-page {
       flex: 1 100%; } }
-  .couples-therapy-page .header {
+  .couples-therapy-page .jumbo {
     height: 240px;
     flex: 1 100%;
     background: url("../img/slide_2.jpg");
     background-size: cover;
     background-position: center;
     position: relative; }
-    .couples-therapy-page .header h1 {
+    .couples-therapy-page .jumbo h1 {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -877,14 +877,14 @@ a {
   @media screen and (max-width: 700px) {
     .family-therapy-page {
       flex: 1 100%; } }
-  .family-therapy-page .header {
+  .family-therapy-page .jumbo {
     height: 240px;
     flex: 1 100%;
     background: url("../img/slide_3.jpg");
     background-size: cover;
     background-position: center;
     position: relative; }
-    .family-therapy-page .header h1 {
+    .family-therapy-page .jumbo h1 {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -908,14 +908,14 @@ a {
   @media screen and (max-width: 700px) {
     .adoption-therapy-page {
       flex: 1 100%; } }
-  .adoption-therapy-page .header {
+  .adoption-therapy-page .jumbo {
     height: 240px;
     flex: 1 100%;
     background: url("../img/slide_4.jpg");
     background-size: cover;
     background-position: 50% 25%;
     position: relative; }
-    .adoption-therapy-page .header h1 {
+    .adoption-therapy-page .jumbo h1 {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -939,14 +939,14 @@ a {
   @media screen and (max-width: 700px) {
     .parent-coaching-page {
       flex: 1 100%; } }
-  .parent-coaching-page .header {
+  .parent-coaching-page .jumbo {
     height: 240px;
     flex: 1 100%;
     background: url("../img/slide_5.jpg");
     background-size: cover;
     background-position: 50% 80%;
     position: relative; }
-    .parent-coaching-page .header h1 {
+    .parent-coaching-page .jumbo h1 {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -982,14 +982,14 @@ a {
   @media screen and (max-width: 700px) {
     .training-page {
       flex: 1 100%; } }
-  .training-page .header {
+  .training-page .jumbo {
     height: 240px;
     flex: 1 100%;
     background: url("../img/slide_6.jpg");
     background-size: cover;
     background-position: 50% 70%;
     position: relative; }
-    .training-page .header h1 {
+    .training-page .jumbo h1 {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -1038,5 +1038,80 @@ a {
       text-align: left;
       max-width: 100px;
       padding: 10px; }
+
+.contact-page {
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 20px 20px 20px;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1 75%; }
+  .contact-page p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    max-width: 800px; }
+  @media screen and (max-width: 700px) {
+    .contact-page {
+      flex: 1 100%; } }
+  .contact-page .jumbo {
+    height: 240px;
+    flex: 1 100%;
+    background: url("../img/slide_7.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative; }
+    .contact-page .jumbo h1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 3px 3px 3px black;
+      text-align: center; }
+  .contact-page p {
+    text-align: center; }
+
+.form-container {
+  padding: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+form {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto; }
+  form button {
+    background-color: #009F9A;
+    border: 0;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 200ms ease-in-out; }
+    form button:hover, form button:active, form buttonfocus {
+      cursor: pointer;
+      background-color: #006c69; }
+  @media screen and (max-width: 950px) {
+    form {
+      width: 100%; } }
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin: 10px 0; }
+  .form-group label {
+    text-align: right;
+    margin-right: 20px;
+    width: 20%;
+    font-weight: bold; }
+  .form-group input {
+    height: 25px;
+    width: 80%;
+    border: 1px solid #999; }
+  .form-group textarea {
+    width: 80%;
+    height: 100px;
+    border-color: #999; }
 
 /*# sourceMappingURL=application.css.map */

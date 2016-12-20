@@ -50,11 +50,11 @@
   padding: 0;
   li {
     border-radius: 3px;
-    padding: 10px 5px;
+    padding: 12px 6px;
     font-size: 1.1em;
     letter-spacing: 1px;
     display: inline;
-    transition: background-color 100ms ease-out;
+    transition: background-color 200ms ease-out;
     a {
       color: $dark-grey;
     }
@@ -91,7 +91,7 @@
   left: 0;
   padding: 0;
   width: 260px;
-  transition: all 150ms ease-out;
+  transition: all 200ms ease-in-out;
   li {
     border-radius: 0;
     padding: 13px 10px;

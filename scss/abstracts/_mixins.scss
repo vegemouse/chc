@@ -15,3 +15,23 @@
     flex: 1 100%;
   }
 }
+
+@mixin services-header($image, $position) {
+  .jumbo {
+    height: 240px;
+    flex: 1 100%;
+    background: url('../img/slide_#{$image}.jpg');
+    background-size: cover;
+    background-position: $position;
+    position: relative;
+    h1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 3px 3px 3px black;
+      text-align: center;
+    }
+  }
+}

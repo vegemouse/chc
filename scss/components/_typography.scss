@@ -1,4 +1,4 @@
-ul, li, div, p, span, section {
+ul, li, div, p, span, section, button, td, th {
   font-family: $normal-font;
   color: $dark-grey;
 }
@@ -41,7 +41,7 @@ a {
 .highlight {
   letter-spacing: 1px;
 }
-.main, .about-page, .individual-therapy-page, .couples-therapy-page, .adoption-therapy-page, .parent-coaching-page, .training-page, .hours-and-fees-page {
+.main, .about-page, .individual-therapy-page, .couples-therapy-page, .adoption-therapy-page, .parent-coaching-page, .training-page, .hours-and-fees-page, .contact-page {
   h2 {
     font-size: 1.6em;
     margin: 10px;
