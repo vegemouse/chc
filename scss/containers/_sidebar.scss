@@ -13,9 +13,9 @@
     padding: 10px;
   }
   iframe {
-    margin-bottom: 20px;
+    margin: 20px 0;
     height: 30vh;
-    max-height: 300px;  
+    max-height: 300px;
     width: 100%;
     border: 0;
   }
@@ -23,7 +23,6 @@
     flex: 1 100%;
   }
   img {
-    margin-top: 20px;
     width: 130px;
   }
 }

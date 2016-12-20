@@ -556,7 +556,7 @@ a {
     margin: 10px 0;
     padding: 10px; }
   .sidebar iframe {
-    margin-bottom: 20px;
+    margin: 20px 0;
     height: 30vh;
     max-height: 300px;
     width: 100%;
@@ -565,7 +565,6 @@ a {
     .sidebar {
       flex: 1 100%; } }
   .sidebar img {
-    margin-top: 20px;
     width: 130px; }
 
 .main {
