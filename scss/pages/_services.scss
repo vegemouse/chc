@@ -60,3 +60,66 @@
   @include page-content;
   @include services-header(4, 50% 25%);
 }
+
+.parent-coaching-page {
+  @include page-content;
+  @include services-header(5, 50% 80%);
+  li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  .coach {
+    font-style: italic;
+  }
+  .special {
+    &:first-letter {
+      font-size: 1.2em;
+    }
+    font-style: normal;
+    display: block;
+    font-size: 1.1em;
+    color: $teal;
+  }
+}
+
+.training-page {
+  @include page-content;
+  @include services-header(6, 50% 70%);
+}
+
+.hours-and-fees-page {
+  @include page-content;
+  h4 {
+    line-height: 30px;
+  }
+}
+
+.tables {
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  table {
+    border: 1px solid $light-grey;
+    border-collapse: collapse;
+    width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    th {
+      text-align: center;
+      padding: 15px;
+      color: $pink;
+    }
+    tr {
+      &:nth-of-type(2) {
+        background-color: $light-grey;
+      }
+    }
+    td {
+      text-align: left;
+      max-width: 100px;
+      padding: 10px;
+    }
+  }
+}

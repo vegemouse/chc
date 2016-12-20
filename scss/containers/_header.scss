@@ -1,5 +1,5 @@
 .header {
-  padding-right: 35px;
+  padding: 0 20px;
   margin-bottom: 10px;
   display: flex;
   margin-right: auto;
@@ -55,6 +55,9 @@
     letter-spacing: 1px;
     display: inline;
     transition: background-color 100ms ease-out;
+    a {
+      color: $dark-grey;
+    }
     &:hover {
       cursor: pointer;
       background-color: $light-grey;

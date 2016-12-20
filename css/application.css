@@ -433,13 +433,13 @@ h6 {
   font-size: 1.2em; }
 
 a {
-  color: #666;
+  color: #009F9A;
   text-decoration: none; }
 
 .highlight {
   letter-spacing: 1px; }
 
-.main h2, .about-page h2, .individual-therapy-page h2, .couples-therapy-page h2, .adoption-therapy-page h2 {
+.main h2, .about-page h2, .individual-therapy-page h2, .couples-therapy-page h2, .adoption-therapy-page h2, .parent-coaching-page h2, .training-page h2, .hours-and-fees-page h2 {
   font-size: 1.6em;
   margin: 10px;
   width: 100%;
@@ -448,7 +448,7 @@ a {
   max-width: 750px;
   margin-left: auto;
   margin-right: auto; }
-.main h4, .about-page h4, .individual-therapy-page h4, .couples-therapy-page h4, .adoption-therapy-page h4 {
+.main h4, .about-page h4, .individual-therapy-page h4, .couples-therapy-page h4, .adoption-therapy-page h4, .parent-coaching-page h4, .training-page h4, .hours-and-fees-page h4 {
   margin: 7px;
   color: #009F9A;
   width: 100%;
@@ -463,7 +463,7 @@ a {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  height: 50vh;
+  height: 40vh;
   max-height: 400px;
   margin-bottom: 20px;
   position: relative; }
@@ -475,10 +475,9 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 5px;
   top: 0;
   left: 0;
-  background-position: 50% 60%; }
+  background-position: 50% 75%; }
   .slideshow1 h3 {
     position: absolute;
     text-shadow: 2px 2px 2px black;
@@ -493,10 +492,9 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 5px;
   top: 0;
   left: 0;
-  background-position: 50% 72%; }
+  background-position: 50% 90%; }
   .slideshow2 h3 {
     position: absolute;
     text-shadow: 2px 2px 2px black;
@@ -511,7 +509,6 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 5px;
   top: 0;
   left: 0;
   background-position: center; }
@@ -529,7 +526,6 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 5px;
   top: 0;
   left: 0;
   background-position: 50% 28%; }
@@ -547,10 +543,9 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 5px;
   top: 0;
   left: 0;
-  background-position: 50% 90%; }
+  background-position: 50% 75%; }
   .slideshow5 h3 {
     position: absolute;
     text-shadow: 2px 2px 2px black;
@@ -565,10 +560,9 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 5px;
   top: 0;
   left: 0;
-  background-position: 50% 40%; }
+  background-position: 50% 60%; }
   .slideshow6 h3 {
     position: absolute;
     text-shadow: 2px 2px 2px black;
@@ -586,7 +580,7 @@ a {
       padding: 0; } }
 
 .header {
-  padding-right: 35px;
+  padding: 0 20px;
   margin-bottom: 10px;
   display: flex;
   margin-right: auto;
@@ -635,6 +629,8 @@ a {
     letter-spacing: 1px;
     display: inline;
     transition: background-color 100ms ease-out; }
+    .navigation li a {
+      color: #666; }
     .navigation li:hover {
       cursor: pointer;
       background-color: #eee; }
@@ -730,7 +726,6 @@ a {
     .main {
       flex: 1 100%; } }
   .main p {
-    text-align: center;
     line-height: 1.5em;
     font-size: 1.15em;
     margin-right: auto;
@@ -928,5 +923,120 @@ a {
       color: white;
       text-shadow: 3px 3px 3px black;
       text-align: center; }
+
+.parent-coaching-page {
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 20px 20px 20px;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1 75%; }
+  .parent-coaching-page p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    max-width: 800px; }
+  @media screen and (max-width: 700px) {
+    .parent-coaching-page {
+      flex: 1 100%; } }
+  .parent-coaching-page .header {
+    height: 240px;
+    flex: 1 100%;
+    background: url("../img/slide_5.jpg");
+    background-size: cover;
+    background-position: 50% 80%;
+    position: relative; }
+    .parent-coaching-page .header h1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 3px 3px 3px black;
+      text-align: center; }
+  .parent-coaching-page li {
+    font-size: 1.1em;
+    margin-bottom: 5px; }
+  .parent-coaching-page .coach {
+    font-style: italic; }
+  .parent-coaching-page .special {
+    font-style: normal;
+    display: block;
+    font-size: 1.1em;
+    color: #009F9A; }
+    .parent-coaching-page .special:first-letter {
+      font-size: 1.2em; }
+
+.training-page {
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 20px 20px 20px;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1 75%; }
+  .training-page p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    max-width: 800px; }
+  @media screen and (max-width: 700px) {
+    .training-page {
+      flex: 1 100%; } }
+  .training-page .header {
+    height: 240px;
+    flex: 1 100%;
+    background: url("../img/slide_6.jpg");
+    background-size: cover;
+    background-position: 50% 70%;
+    position: relative; }
+    .training-page .header h1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 3px 3px 3px black;
+      text-align: center; }
+
+.hours-and-fees-page {
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 20px 20px 20px;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1 75%; }
+  .hours-and-fees-page p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    max-width: 800px; }
+  @media screen and (max-width: 700px) {
+    .hours-and-fees-page {
+      flex: 1 100%; } }
+  .hours-and-fees-page h4 {
+    line-height: 30px; }
+
+.tables {
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .tables table {
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 20px; }
+    .tables table th {
+      text-align: center;
+      padding: 15px;
+      color: #D17F84; }
+    .tables table tr:nth-of-type(2) {
+      background-color: #eee; }
+    .tables table td {
+      text-align: left;
+      max-width: 100px;
+      padding: 10px; }
 
 /*# sourceMappingURL=application.css.map */

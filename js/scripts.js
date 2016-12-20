@@ -6,6 +6,6 @@ $(function() {
     $('.slideshow div:first-child').fadeOut(500)
     .next('div').fadeIn(1000).end().appendTo('.slideshow');
   },
-  5000);
+  4000);
 
 })
