@@ -5,9 +5,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
   @media #{$medium-break} {
-    padding: 15px 20px 0 20px;
+    padding: 0 20px;
     border-bottom: none;
   }
 }
@@ -67,7 +67,7 @@
   position: relative;
   &:hover, &:active {
     .services-menu {
-      height: 230px;
+      max-height: 600px;
     }
   }
 }
@@ -75,7 +75,7 @@
 .services-menu {
   background-color: $light-grey;
   z-index: 5;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   position: absolute;
   border-radius: 0 5px 5px 5px;

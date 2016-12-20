@@ -1,5 +1,6 @@
 .sidebar {
-  padding: 20px;
+  text-align: center;
+  padding: 0 20px;
   flex: 1 30%;
   h5 {
     color: $teal;
@@ -8,17 +9,21 @@
     color: $pink;
   }
   p {
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 10px;
-    text-align: center;
   }
   iframe {
-    margin-top: 20px;
+    margin-bottom: 20px;
     height: 30vh;
+    max-height: 300px;  
     width: 100%;
     border: 0;
   }
   @media #{$small-break} {
     flex: 1 100%;
+  }
+  img {
+    margin-top: 20px;
+    width: 130px;
   }
 }

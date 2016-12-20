@@ -455,10 +455,10 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #eee; }
+  border-bottom: 1px solid #eee; }
   @media screen and (max-width: 950px) {
     .header {
-      padding: 15px 20px 0 20px;
+      padding: 0 20px;
       border-bottom: none; } }
 
 .logo {
@@ -505,12 +505,12 @@ a {
 .services {
   position: relative; }
   .services:hover .services-menu, .services:active .services-menu {
-    height: 230px; }
+    max-height: 600px; }
 
 .services-menu {
   background-color: #eee;
   z-index: 5;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   position: absolute;
   border-radius: 0 5px 5px 5px;
@@ -545,24 +545,28 @@ a {
       flex-wrap: wrap; } }
 
 .sidebar {
-  padding: 20px;
+  text-align: center;
+  padding: 0 20px;
   flex: 1 30%; }
   .sidebar h5 {
     color: #009F9A; }
   .sidebar h6 {
     color: #D17F84; }
   .sidebar p {
-    margin: 20px 0;
-    padding: 10px;
-    text-align: center; }
+    margin: 10px 0;
+    padding: 10px; }
   .sidebar iframe {
-    margin-top: 20px;
+    margin-bottom: 20px;
     height: 30vh;
+    max-height: 300px;
     width: 100%;
     border: 0; }
   @media screen and (max-width: 620px) {
     .sidebar {
       flex: 1 100%; } }
+  .sidebar img {
+    margin-top: 20px;
+    width: 130px; }
 
 .main {
   display: flex;
@@ -581,14 +585,13 @@ a {
   .main h4 {
     margin: 7px;
     color: #009F9A;
-    text-align: center;
     width: 100%;
+    text-align: center;
     font-size: 1.1em; }
   .main p {
-    line-height: 1.4em;
+    line-height: 1.2em;
     font-size: 1.1em;
     max-width: 650px;
-    text-align: center;
     margin-right: auto;
     margin-left: auto; }
 
@@ -610,7 +613,7 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 5px;
   top: 0;
   left: 0; }
   .slideshow1 h3 {
@@ -627,7 +630,7 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 5px;
   top: 0;
   left: 0; }
   .slideshow2 h3 {
@@ -644,7 +647,7 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 5px;
   top: 0;
   left: 0; }
   .slideshow3 h3 {
@@ -661,7 +664,7 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 5px;
   top: 0;
   left: 0; }
   .slideshow4 h3 {
@@ -678,7 +681,7 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 5px;
   top: 0;
   left: 0; }
   .slideshow5 h3 {
@@ -695,7 +698,7 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 5px;
   top: 0;
   left: 0; }
   .slideshow6 h3 {
@@ -711,13 +714,10 @@ a {
   align-items: center;
   margin-top: 20px;
   border-top: 2px solid #eee; }
-  .footer img {
-    width: 100px; }
   .footer p {
+    text-align: center;
     font-size: 0.9em;
     line-height: 20px;
-    opacity: 0.9;
-    padding: 5px 30px;
-    text-align: center; }
+    opacity: 0.9; }
 
 /*# sourceMappingURL=application.css.map */
