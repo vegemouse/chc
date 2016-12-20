@@ -24,5 +24,9 @@
   }
   img {
     width: 130px;
+    &:first-of-type {
+      margin-bottom: 20px
+    }
   }
+
 }

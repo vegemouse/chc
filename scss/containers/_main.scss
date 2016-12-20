@@ -2,16 +2,20 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 20px;
   flex: 1 70%;
   @media #{$small-break} {
     flex: 1 100%;
   }
   h2 {
-    font-size: 1.7em;
+    font-size: 1.6em;
     margin: 10px;
     width: 100%;
     text-align: center;
     color: $pink;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
   }
   h4 {
     margin: 7px;
@@ -19,6 +23,9 @@
     width: 100%;
     text-align: center;
     font-size: 1.1em;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
   }
   p {
     line-height: 1.2em;
