@@ -591,9 +591,12 @@ a {
   @media screen and (max-width: 950px) {
     .header {
       padding: 20px 20px; } }
+  @media screen and (max-width: 700px) {
+    .header {
+      padding: 20px 5px; } }
 
 .logo {
-  flex: 1 35%;
+  flex: 1 32%;
   display: flex;
   align-items: center; }
   .logo img {
@@ -617,7 +620,7 @@ a {
       justify-content: center; } }
 
 .navigation {
-  flex: 1 65%;
+  flex: 1 68%;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -639,7 +642,9 @@ a {
       flex: 1 60%; } }
   @media screen and (max-width: 700px) {
     .navigation {
-      flex: 1 100%; } }
+      flex: 1 100%; }
+      .navigation li {
+        font-size: 0.9em; } }
 
 .services {
   position: relative; }
@@ -734,7 +739,7 @@ a {
 .footer {
   box-sizing: border-box;
   width: 100%;
-  padding: 0 40px;
+  padding: 10px 40px;
   background-color: #eee;
   display: flex;
   justify-content: space-around;
@@ -1015,6 +1020,12 @@ a {
       flex: 1 100%; } }
   .hours-and-fees-page h4 {
     line-height: 30px; }
+  .hours-and-fees-page .paypal {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .hours-and-fees-page .paypal img {
+      height: 200px; }
 
 .tables {
   margin: 20px;

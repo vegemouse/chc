@@ -10,10 +10,13 @@
   @media #{$medium-break} {
     padding: 20px 20px;
   }
+  @media #{$small-break} {
+    padding: 20px 5px;
+  }
 }
 
 .logo {
-  flex: 1 35%;
+  flex: 1 32%;
   display: flex;
   align-items: center;
   img {
@@ -43,7 +46,7 @@
 }
 
 .navigation {
-  flex: 1 65%;
+  flex: 1 68%;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -68,6 +71,9 @@
   }
   @media #{$small-break} {
     flex: 1 100%;
+    li {
+      font-size: 0.9em;
+    }
   }
 }
 

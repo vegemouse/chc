@@ -72,6 +72,14 @@
   h4 {
     line-height: 30px;
   }
+  .paypal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img {
+      height: 200px;
+    }
+  }
 }
 
 .tables {
